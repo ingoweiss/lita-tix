@@ -1,0 +1,49 @@
+en:
+  lita:
+    handlers:
+      rally:
+        working: "Give me a second..."
+        no_comments: "No comments"
+        update_item_state_log: "'%{field}' updated to '%{value}' by %{user} via %{bot}"
+        block_item_log: "Blocked by %{user} via %{bot}"
+        unblock_item_log: "Unblocked by %{user} via %{bot}"
+        mark_item_ready_log: "Marked ready by %{user} via %{bot}"
+        mark_item_not_ready_log: "Marked not ready by %{user} via %{bot}"
+        assign_item_log: "Assigned to %{owner} by %{user} via %{bot}"
+        could_not_find: "Could not find %{item}"
+        could_not_update: "Could not update %{item}"
+        exceeds_multiple_items_limit: "Sorry, you configured me to only handle %{limit} items at a time"
+        invalid_item_state_update: "%{item_id} (%{item_type}) can be %{valid_commands}, but not %{invalid_command}"
+        unhandled_command_message: "Sorry, I do not know how to do that. Try 'help' for a list of things I can do"
+        unhandled_question_message: "Sorry, I do not know how to answer that question. Try 'help' for a list of things I can do"
+        unsupported_for_multiple_projects_message: "Sorry, this command does not yet support multiple projects"
+        delete_task_confirmation_message: "%{task_id} deleted"
+        not_found_messages:
+          - "Doesn't ring a bell"
+          - "Huh?"
+          - "No idea"
+          - "Not the foggiest"
+          - "That's SO not a Rally thingy"
+          - "Can't help you there"
+          - "(shrug)"
+    formatters:
+      base:
+        revision: "[%{timestamp} by %{user}] %{description}"
+      story:
+        no_tasks: "No tasks"
+        size:
+          one: "1 point"
+          other: "%{count} points"
+        schedule:
+          today: "dropping today"
+          tomorrow: "dropping tomorrow"
+          future: "dropping %{date}"
+          yesterday: "was scheduled to drop yesterday"
+          past: "was scheduled to drop %{date}"
+      defect:
+        state:
+          fixed_and_released: "fixed in %{release}"
+          fixed_and_released_and_closed: "closed, fixed in %{release}"
+      iteration:
+        all_accepted: "All %{total_stories_count} stories accepted in %{iteration}"
+        some_accepted: "%{accepted_stories_count} out of %{total_stories_count} stories accepted in %{iteration}"
