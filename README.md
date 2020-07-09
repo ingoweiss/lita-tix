@@ -1,14 +1,14 @@
-# lita-rally
+# lita-tix
 
 A Lita (lita.io) plugin for adding the capability to interact with Rally to chat bots
 
 ## Installation
 
-1. Install the 'lita-rally' gem
+1. Install the 'lita-tix' gem
 2. Add lita-rally to your Lita instance's Gemfile:
 
 ``` ruby
-gem "lita-rally"
+gem "lita-tix"
 ```
 
 ## Required Configuration
